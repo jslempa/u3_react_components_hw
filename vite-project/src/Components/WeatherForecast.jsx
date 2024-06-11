@@ -1,11 +1,13 @@
 import '../WeatherForecast.css'
+import WeatherData from './WeatherData'
+import WeatherIcon from './WeatherIcon'
 
 const WeatherForecast = (props) => {
     
     console.log(props.weatherForecasts[0]) // this line works
   
     return (
-        <div>           
+        <div className="container">           
             <div className="weather">
                 <h2>{props.weatherForecasts[0].day}</h2>
                 <img src={props.weatherForecasts[0].img} alt={props.weatherForecasts[0].imgAlt}/>
